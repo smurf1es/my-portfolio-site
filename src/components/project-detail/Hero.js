@@ -1,22 +1,47 @@
 import Button from '../Button';
 
+import HuluVideo from '../../assets/videos/video-huluclone.mp4';
+import InstagramClone from '../../assets/videos/video-instagramclone.mp4';
+import DiscordClone from '../../assets/videos/video-discordclone.mp4';
+import QuotesGenerator from '../../assets/videos/video-quotesgenerator.mp4';
+
 const Hero = (props) => {
   function renderVideo() {
     switch (props.title) {
       case 'Hulu Clone':
         return (
-          <iframe
-            title="Hulu Clone"
-            className="absolute w-full h-screen/1 top-0"
-            src="https://www.youtube.com/embed/ipc2P9Uv8Q0?mute=1&loop=1&controls=0&autoplay=1"
+          <video
+            autoPlay={true}
+            muted={true}
+            className="absolute w-full bottom-0 filter brightness-50"
+            src={HuluVideo}
           />
         );
       case 'Instagram Clone':
         return (
-          <iframe
-            title="Instagram Clone"
-            className="absolute w-full h-screen/1 top-0"
-            src="https://www.youtube.com/embed/tk48tf8uZpg?mute=1&loop=1&controls=0&autoplay=1"
+          <video
+            autoPlay={true}
+            muted={true}
+            className="absolute w-full bottom-0 filter brightness-50"
+            src={InstagramClone}
+          />
+        );
+      case 'Discord Clone':
+        return (
+          <video
+            autoPlay={true}
+            muted={true}
+            className="absolute w-full bottom-0 filter brightness-50"
+            src={DiscordClone}
+          />
+        );
+      case 'Quotes Generator':
+        return (
+          <video
+            autoPlay={true}
+            muted={true}
+            className="absolute w-full bottom-0 filter brightness-50 z-0"
+            src={QuotesGenerator}
           />
         );
       default:
