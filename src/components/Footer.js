@@ -15,9 +15,12 @@ const Footer = () => {
           <h2 className="font-medium font-open-sans text-white tracking-wider mb-4">
             Contact
           </h2>
-          <p className="text-palette-dark-gray font-open-sans font-light mb-1">
+          <a
+            href="mailto:hughdev101@gmail.com"
+            className="text-palette-dark-gray font-open-sans font-light mb-1"
+          >
             hughdev101@gmail.com
-          </p>
+          </a>
           <p className="text-palette-dark-gray font-open-sans font-light">
             @pahugerpb_
           </p>

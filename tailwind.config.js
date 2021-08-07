@@ -4,17 +4,17 @@ module.exports = {
   theme: {
     extend: {
       inset: {
+        '90%': '90%',
         '85%': '85%',
-        '80%': '80%',
         '20%': '20%',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         'open-sans': ['Open Sans', 'sans-serif'],
       },
-      // backgroundImage: (theme) => ({
-      //   'hero-image': "url('/src/assets/images/image-hero.png')",
-      // }),
+      backgroundImage: (theme) => ({
+        'hero-image': "url('https://i.ibb.co/3zRGPbn/image-hero.png')",
+      }),
       colors: {
         palette: {
           main: '#FFC700',
@@ -27,7 +27,7 @@ module.exports = {
       },
       width: (theme) => ({
         950: '950px',
-        brand: '176px',
+        brand: '150px',
       }),
       height: (theme) => ({
         'screen/125vh': '125vh',
@@ -37,7 +37,7 @@ module.exports = {
         'screen/3': 'calc(100vh / 3)',
         'screen/4': 'calc(100vh / 4)',
         'screen/5': 'calc(100vh / 5)',
-        110: '110px',
+        90: '90px',
         125: '125px',
       }),
     },
