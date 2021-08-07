@@ -3,21 +3,27 @@ import { ReactComponent as BrandIcon } from '../assets/icons/logo-portfolio.svg'
 
 const Navbar = () => {
   return (
-    <div className="flex w-full">
+    <div className="bg-palette-darkest-gray flex w-full justify-between h-14 px-8 py-4">
       <div>
-        <BrandIcon />
+        <BrandIcon className="w-brand" />
       </div>
 
       <div>
-        <ul className="text-white">
-          <li>
-            <Link to="#service">Service</Link>
+        <ul className="text-white flex items-center">
+          <li className="mx-6">
+            <Link className="hover:underline" to="#service">
+              Service
+            </Link>
           </li>
-          <li>
-            <Link to="#project">Project</Link>
+          <li className="mx-6">
+            <Link className="hover:underline" to="#project">
+              Project
+            </Link>
           </li>
-          <li>
-            <Link to="contact">Contact</Link>
+          <li className="ml-6">
+            <Link className="hover:underline" to="contact">
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

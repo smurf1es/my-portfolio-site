@@ -3,6 +3,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      inset: {
+        '85%': '85%',
+        '80%': '80%',
+        '20%': '20%',
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         'open-sans': ['Open Sans', 'sans-serif'],
@@ -20,6 +25,10 @@ module.exports = {
           black: '#00000',
         },
       },
+      width: (theme) => ({
+        950: '950px',
+        brand: '176px',
+      }),
       height: (theme) => ({
         'screen/125vh': '125vh',
         'screen/0.5': '75vh',
@@ -28,6 +37,8 @@ module.exports = {
         'screen/3': 'calc(100vh / 3)',
         'screen/4': 'calc(100vh / 4)',
         'screen/5': 'calc(100vh / 5)',
+        110: '110px',
+        125: '125px',
       }),
     },
   },
