@@ -34,7 +34,7 @@ const Hero = () => {
           <Button href="#about" text="See More" />
         </section>
 
-        <section className="flex justify-center items-center absolute w-full h-90 md:w-950 md:h-125 bg-white rounded-full shadow-lg z-10 overflow-x-hidden top-90% md:top-85% md:left-20%">
+        <section className="flex justify-center items-center absolute w-full h-90 md:w-950 md:h-125 bg-white rounded-full shadow-lg z-10 overflow-x-hidden overflow-y-hidden top-90% md:top-85% md:left-20%">
           <span className="mx-6 md:mx-12">
             <HTMLIcon className="w-10 md:w-20" />
           </span>
