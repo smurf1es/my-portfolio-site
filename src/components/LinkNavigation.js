@@ -9,6 +9,7 @@ const LinkNavigation = (props) => {
         className="text-palette-blue hover:text-blue-900 hover:underline transition-colors duration-150"
         style={props.main ? { width: '6rem' } : { width: '7.8rem' }}
         href={props.href}
+        onClick={props.onClick}
       >
         {props.text}{' '}
       </a>
@@ -23,4 +24,5 @@ LinkNavigation.propTypes = {
   href: PropTypes.string,
   text: PropTypes.string,
   main: PropTypes.bool,
+  onClick: PropTypes.func,
 };

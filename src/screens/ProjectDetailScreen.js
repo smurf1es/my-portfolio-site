@@ -26,6 +26,7 @@ export default function ProjectDetail() {
               title="Hulu Clone App"
               href="https://github.com/smurf1es/hulu-clone-nextjs"
               text="A React app made with Next JS framework that is basically implementing Hulu original UI layouts."
+              image="https://i.ibb.co/X2pHCy4/image-huluclone.png"
             />
           </>
         );
@@ -41,6 +42,7 @@ export default function ProjectDetail() {
               title="Instagram Clone App"
               href="https://github.com/smurf1es/instagram-clone"
               text="A React app that has been integrated with Firebase for the data handling and database storage. The layouts look like the original web version of Instagram."
+              image="https://i.ibb.co/hcGN3tF/image-instagramclone.png"
             />
           </>
         );
@@ -56,6 +58,7 @@ export default function ProjectDetail() {
               title="Discord Clone App"
               href="#source-code-here"
               text="A React app that has been integrated with Firebase for the data handling and database storage. The layouts look like the original web version of Discord."
+              image="https://i.ibb.co/SrhWQHk/image-discordclone.png"
             />
           </>
         );
@@ -70,7 +73,8 @@ export default function ProjectDetail() {
             <About
               title="Quotes Generator App"
               href="https://github.com/smurf1es/quote-generator-react-ts"
-              text="A React app with Typescript implementation. This app generates random quotes with the data that is provided from a specific API that I use."
+              text="A React app with Typescript implementation. This app generates random quotes with the data that is provided from a specific API."
+              image="https://i.ibb.co/kymhktM/image-quotesgenerator.png"
             />
           </>
         );
@@ -80,9 +84,9 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div>
+    <>
       {renderItem()}
       <Footer />
-    </div>
+    </>
   );
 }

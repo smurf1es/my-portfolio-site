@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import ProjectDetail from './screens/ProjectDetail';
+import ProjectDetail from './screens/ProjectDetailScreen';
 import Home from './screens/HomeScreen';
 
 const App = () => {

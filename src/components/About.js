@@ -2,11 +2,30 @@ import PropTypes from 'prop-types';
 import LinkNavigation from './LinkNavigation';
 
 const About = (props) => {
+  const scrollToRef = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      right: 0,
+      bottom: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const executeScroll = () => {
+    scrollToRef(props.refProp.aboutRef);
+  };
+
   function renderLink() {
     switch (props.title) {
       case 'Welcome to my Portfolio site!':
         return (
-          <LinkNavigation main={true} href="#projects" text="See projects" />
+          <LinkNavigation
+            onClick={executeScroll}
+            main={true}
+            href="#projects"
+            text="See projects"
+          />
         );
       default:
         return <LinkNavigation href={props.href} text="See source code" />;
@@ -14,12 +33,15 @@ const About = (props) => {
   }
 
   return (
-    <main className="bg-palette-gray h-screen/0.5 md:h-screen/1 flex flex-col md:flex-row items-center justify-center w-full">
+    <main
+      ref={props.refProp.heroRef}
+      className="bg-palette-gray h-screen/0.5 md:h-screen/1 flex flex-col md:flex-row items-center justify-center w-full"
+    >
       <div className="md:w-1/4 md:mb-0 mb-6">
-        <span className="w-48 h-48 md:w-80 md:h-80 block">
+        <span className="about-img-wrapper">
           <img
-            className="pointer-events-none"
-            src="https://i.ibb.co/frmdQ5p/about-image.jpg"
+            className="w-48 h-48 md:w-80 md:h-80 block pointer-events-none object-cover"
+            src={props.image}
             alt="about-img"
           />
         </span>
@@ -50,4 +72,8 @@ About.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
+  ref: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.any }),
+  ]),
 };

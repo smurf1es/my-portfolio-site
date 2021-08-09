@@ -1,8 +1,11 @@
 import ProjectCard from './ProjectCard';
 
-const Project = () => {
+const Project = (props) => {
   return (
-    <main className="bg-palette-darkest-gray h-screen/125vh md:h-screen/1 w-full">
+    <main
+      ref={props.refProp}
+      className="bg-palette-darkest-gray h-screen/125vh md:h-screen/1 w-full"
+    >
       <div className="py-8 md:py-16">
         <h2 className="font-bold font-open-sans text-white text-center text-xl">
           Here are some of my projects:

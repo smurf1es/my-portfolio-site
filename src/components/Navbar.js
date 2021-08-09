@@ -28,6 +28,7 @@ const Navbar = () => {
               <Link
                 className="hover:underline font-open-sans font-light tracking-wide text-palette-gray"
                 to="#service"
+                onClick={() => alert('This site feature is on the way..')}
               >
                 Service
               </Link>
@@ -36,6 +37,7 @@ const Navbar = () => {
               <Link
                 className="hover:underline font-open-sans font-light tracking-wide text-palette-gray"
                 to="#project"
+                onClick={() => alert('This site feature is on the way..')}
               >
                 Project
               </Link>
@@ -44,6 +46,7 @@ const Navbar = () => {
               <Link
                 className="hover:underline font-open-sans font-light tracking-wide text-palette-gray"
                 to="contact"
+                onClick={() => alert('This site feature is on the way..')}
               >
                 Contact
               </Link>
