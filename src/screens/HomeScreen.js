@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar';
 export default function HomeScreen() {
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
+
   return (
     <>
       <Navbar />

@@ -34,7 +34,7 @@ const About = (props) => {
 
   return (
     <main
-      ref={props.refProp.heroRef}
+      ref={props.refProp ? props.refProp.heroRef : null}
       className="bg-palette-gray h-screen/0.5 md:h-screen/1 flex flex-col md:flex-row items-center justify-center w-full"
     >
       <div className="md:w-1/4 md:mb-0 mb-6">
