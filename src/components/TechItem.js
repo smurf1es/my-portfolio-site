@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 
-// https://i.ibb.co/3zRGPbn/image-hero.png
-
 const TechItem = (props) => {
   switch (props.for) {
     case 'next-js':

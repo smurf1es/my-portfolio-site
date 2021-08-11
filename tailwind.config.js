@@ -12,9 +12,6 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
         'open-sans': ['Open Sans', 'sans-serif'],
       },
-      backgroundImage: (theme) => ({
-        'hero-image': "url('https://i.ibb.co/3zRGPbn/image-hero.png')",
-      }),
       colors: {
         palette: {
           main: '#FFC700',
@@ -27,6 +24,7 @@ module.exports = {
       },
       width: (theme) => ({
         950: '950px',
+        500: '500px',
         brand: '150px',
       }),
       height: (theme) => ({

@@ -1,18 +1,24 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Project from '../components/Project';
 import Technology from '../components/Technology';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import ContactModal from '../components/ContactModal';
 
 export default function HomeScreen() {
+  const [showContact, setShowContact] = useState(false);
+
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
 
   return (
     <>
-      <Navbar />
+      <Navbar onClick={() => setShowContact(!showContact)} />
+      {showContact ? (
+        <ContactModal show={() => setShowContact(!showContact)} />
+      ) : null}
       <Hero refProp={heroRef} />
       <About
         title="Welcome to my Portfolio site!"

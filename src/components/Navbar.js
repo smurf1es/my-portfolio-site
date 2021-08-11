@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import { ReactComponent as BrandIcon } from '../assets/icons/logo-portfolio.svg';
 import { ReactComponent as HamburgerIcon } from '../assets/icons/logo-hamburger.svg';
 import { ReactComponent as CrossIcon } from '../assets/icons/logo-cross.svg';
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -27,10 +28,10 @@ const Navbar = () => {
             <li className="mx-6">
               <Link
                 className="hover:underline font-open-sans font-light tracking-wide text-palette-gray"
-                to="#service"
+                to="#about"
                 onClick={() => alert('This site feature is on the way..')}
               >
-                Service
+                About
               </Link>
             </li>
             <li className="mx-6">
@@ -45,8 +46,8 @@ const Navbar = () => {
             <li className="ml-6">
               <Link
                 className="hover:underline font-open-sans font-light tracking-wide text-palette-gray"
-                to="contact"
-                onClick={() => alert('This site feature is on the way..')}
+                to="#contact"
+                onClick={props.onClick}
               >
                 Contact
               </Link>
@@ -73,3 +74,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+Navbar.propTypes = {
+  onClick: PropTypes.func,
+};
