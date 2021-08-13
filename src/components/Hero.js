@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Button from './Button';
 import IconNavigation from './IconNavigation';
 
@@ -65,13 +66,17 @@ const Hero = (props) => {
       </section>
 
       <section className="mr-8 hidden md:block">
-        <IconNavigation for="instagram" />
-        <IconNavigation for="github" />
-        <IconNavigation for="linkedin" />
-        <IconNavigation for="twitter" />
+        <IconNavigation width="w-8" for="instagram" />
+        <IconNavigation width="w-8" for="github" />
+        <IconNavigation width="w-8" for="linkedin" />
+        <IconNavigation width="w-8" for="twitter" />
       </section>
     </div>
   );
 };
 
 export default Hero;
+
+Hero.propTypes = {
+  refProp: PropTypes.object,
+};

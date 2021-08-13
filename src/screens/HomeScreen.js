@@ -15,7 +15,10 @@ export default function HomeScreen() {
 
   return (
     <>
-      <Navbar onClick={() => setShowContact(!showContact)} />
+      <Navbar
+        refProp={{ heroRef, aboutRef }}
+        onClick={() => setShowContact(!showContact)}
+      />
       {showContact ? (
         <ContactModal show={() => setShowContact(!showContact)} />
       ) : null}

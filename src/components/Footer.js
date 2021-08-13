@@ -16,14 +16,11 @@ const Footer = () => {
             Contact
           </h2>
           <a
-            href="mailto:hughdev101@gmail.com"
-            className="text-palette-dark-gray font-open-sans font-light mb-1"
+            href="https://linktr.ee/hooger.dev"
+            className="text-palette-dark-gray font-open-sans font-light mb-1 hover:underline"
           >
-            hughdev101@gmail.com
+            Linktree
           </a>
-          <p className="text-palette-dark-gray font-open-sans font-light">
-            @pahugerpb_
-          </p>
         </div>
 
         <div className="md:ml-12 md:text-left flex flex-col text-center">

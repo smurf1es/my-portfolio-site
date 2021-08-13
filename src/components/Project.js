@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import ProjectCard from './ProjectCard';
 
 const Project = (props) => {
@@ -23,3 +24,7 @@ const Project = (props) => {
 };
 
 export default Project;
+
+Project.propTypes = {
+  refProp: PropTypes.object,
+};
